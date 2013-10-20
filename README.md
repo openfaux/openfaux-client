@@ -1,5 +1,5 @@
 #[OpenFaux](https://openfaux.org)
-#####Browser plug-in for encrypting and masking internet traffic.
+#####Browser plug-in for encrypting and masking internet traffic. (Client-Side)
 
 ##License
 #####OpenFaux is released under the [GNU Affero General Public License (AGPL3)](https://www.gnu.org/licenses/agpl-3.0.html).
