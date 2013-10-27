@@ -1,0 +1,14 @@
+{
+  "name": "OpenFaux",
+  "description": "Browser Plug-in for encrypting and masking internet traffic.",
+  "version": "1.0",
+  "background": { "scripts": ["background.js"] },
+  "permissions": [
+    "tabs", "http://*/*"
+  ],
+  "browser_action": {
+      "default_title": "Switching OpenFaux on and off"
+      
+  },
+  "manifest_version": 2
+}
