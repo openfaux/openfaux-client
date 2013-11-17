@@ -18,7 +18,7 @@ For more information, please see https://www.openfaux.org
 
 ## Bug Tracker
 
-Found a bug? Report it [here](https://github.com/openfaux/openfaux-server/issues/)!
+Found a bug? Report it [here](https://github.com/openfaux/openfaux-client/issues/)!
 
 ## Contact
 
