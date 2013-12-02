@@ -15,4 +15,5 @@ function updateIcon() {
 }
 
 chrome.browserAction.onClicked.addListener(updateIcon);
+//chrome.browserAction.setBadgeText({text: "on"});
 updateIcon();
