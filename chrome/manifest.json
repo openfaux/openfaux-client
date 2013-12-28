@@ -8,8 +8,12 @@
   ],
   "browser_action": {
       "default_title": "Switching OpenFaux on and off"
-       
-      
+
+
+  },
+  "icons": {
+    "48": "icon128.png",
+    "128": "icon128.png"
   },
   "manifest_version": 2
 }
