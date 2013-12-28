@@ -4,6 +4,10 @@
 	"icons" : {
 		"128" : "icon128.png"
 	},
+	"developer" : {
+		"name" : "OpenFaux",
+		"url" : "https://github.com/openfaux/openfaux-client"
+	},
 	"homepage_url" : "https://github.com/openfaux/openfaux-client",
 	"background" : {
 		"scripts" : ["background.js"],
