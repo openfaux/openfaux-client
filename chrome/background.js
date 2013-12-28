@@ -1,19 +1,13 @@
-// Copyright (c) 2011 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
-var min = 1;
-var max = 2;
-var current = min;
-
-function updateIcon() {
-  chrome.browserAction.setIcon({path:"icon" + current + ".png"});
-  current++;
-
-  if (current > max)
-    current = min;
+function toggleState() {
+  localStorage.state = localStorage.state === 'on' ? 'off' : 'on';
+  renderIcon();
 }
 
-chrome.browserAction.onClicked.addListener(updateIcon);
+function renderIcon() {
+  localStorage.state || (localStorage.state = 'on');
+  chrome.browserAction.setIcon({path:"icon-" + localStorage.state + ".png"});
+}
+
+chrome.browserAction.onClicked.addListener(toggleState);
 //chrome.browserAction.setBadgeText({text: "on"});
-updateIcon();
+renderIcon();
