@@ -14,12 +14,12 @@ function renderIcon() {
 		chrome.browserAction.setBadgeText({
 			text: 'off'
 		});
-		chrome.browserAction.setBadgeBackgroundColor( {color: "#B3B3B3" });
+		chrome.browserAction.setBadgeBackgroundColor( {color: "#b3b3b3" });
 	} else {
 		chrome.browserAction.setBadgeText({
 			text: 'on'
 		});
-		chrome.browserAction.setBadgeBackgroundColor( {color: "#FFA200" });
+		chrome.browserAction.setBadgeBackgroundColor( {color: "#ffa200" });
 	}
 	chrome.browserAction.setIcon({
 		path: 'media/openfaux-icon-19px' + state + '.png'
