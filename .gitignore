@@ -1,1 +1,9 @@
-*.crx
+# for thumbnail indexes and folder configs for some OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# backup files vi, emacs, ...
+*.swp
+*~
+\#*\#
