@@ -1,0 +1,11 @@
+{
+  "name": "openfaux-client",
+  "scripts": {
+    "test": "jshint */*/*.js && jscs */*/*.js"
+  },
+  "repository": "openfaux/openfaux-client",
+  "devDependencies": {
+    "jscs": "1.1.0",
+    "jshint": "2.4.0"
+  }
+}

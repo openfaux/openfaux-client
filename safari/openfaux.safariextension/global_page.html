@@ -1,21 +1,18 @@
 <script>
-	
-	function toggleOpenFaux(event) 
-	{
-		changeToolbarIcon("icon-on.png")
-	}
-	
-	function changeToolbarIcon(newIconName) 
-	{
-		var itemArray = safari.extension.toolbarItems;
-		for (var i = 0; i < itemArray.length; ++i) {
-			var item = itemArray[i];
-			if (item.identifier == "openfaux.toggle") {
-				item.image = safari.extension.baseURI + "icons/" + newIconName;
-		   	}
-	   	}
-	}
-	
-	safari.application.addEventListener("command", toggleOpenFaux, false);
+  function toggleOpenFaux(event) {
+    changeToolbarIcon('icon-on.png')
+  }
 
+  function changeToolbarIcon(newIconName) {
+    var itemArray = safari.extension.toolbarItems;
+    var i;
+    for (i = 0; i < itemArray.length; ++i) {
+      var item = itemArray[i];
+      if (item.identifier == 'openfaux.toggle') {
+        item.image = safari.extension.baseURI + 'icons/' + newIconName;
+      }
+    }
+  }
+
+  safari.application.addEventListener('command', toggleOpenFaux, false);
 </script>

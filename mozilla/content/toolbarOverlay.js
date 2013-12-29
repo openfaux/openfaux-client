@@ -3,12 +3,13 @@ var OpenFaux = {
   max: 2,
   current: 1,
 
-  updateIcon : function(){
+  updateIcon: function() {
     this.current++;
-    if (this.current > this.max)
+    if (this.current > this.max) {
       this.current = this.min;
-    document.getElementById("openfaux-button").setAttribute("current", this.current);
+    }
+    document.getElementById('openfaux-button').setAttribute('current', this.current);
   }
-}
+};
 
-window.addEventListener("load", OpenFaux.updateIcon, false);
+window.addEventListener('load', OpenFaux.updateIcon, false);

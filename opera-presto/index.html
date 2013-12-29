@@ -1,30 +1,30 @@
 <html>
-	<head>
-		<script>
-			var min = 1;
-			var max = 2;
-			var current = min;
-			
-			var updateIcon = function() {
-				button.icon = "icon" + current + ".png";
-				if (++current > max)
-					current = min;
-				
-				// kindly code here for further modifications
-			};
-			
-			var properties = {
-				disabled: false,
-				title: "OpenFaux",
-				icon: "icon2.png",
-				onclick: updateIcon
-			};
-			
-			// Create and add the button to the toolbar
-			var button = opera.contexts.toolbar.createItem(properties);
-			opera.contexts.toolbar.addItem(button);
-		</script>
-	</head>
-	<body>
-	</body>
+  <head>
+    <script>
+      var min = 1;
+      var max = 2;
+      var current = min;
+
+      var updateIcon = function () {
+        button.icon = 'icon' + current + '.png';
+        if (++current > max) {
+          current = min;
+        }
+        // Kindly code here for further modifications
+      };
+
+      var properties = {
+        disabled: false,
+        title: 'OpenFaux',
+        icon: 'icon2.png',
+        onclick: updateIcon
+      };
+
+      // Create and add the button to the toolbar
+      var button = opera.contexts.toolbar.createItem(properties);
+      opera.contexts.toolbar.addItem(button);
+    </script>
+  </head>
+  <body>
+  </body>
 </html>
