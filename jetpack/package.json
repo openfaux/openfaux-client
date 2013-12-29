@@ -4,6 +4,6 @@
   "id": "jid1-U0Hxs40otI0dxQ",
   "description": "Browser add-on for encrypting and masking internet traffic",
   "author": "OpenFaux team",
-  "license": "MPL 2.0",
+  "license": "AGPL 3",
   "version": "0.1.0"
 }
