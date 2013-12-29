@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" version="0.1" id="https://github.com/openfaux/openfaux-client" href="https://github.com/openfaux/openfaux-client">
 	<name>OpenFaux</name>
-	<description>Browser Plug-in for encrypting and masking internet traffic.</description>
+	<description>Browser add-on for encrypting and masking internet traffic.</description>
 	<author href="https://github.com/openfaux/openfaux-client">OpenFaux</author>
 	<icon src="icon128.png"/>
 </widget>
