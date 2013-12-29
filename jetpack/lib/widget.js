@@ -1,12 +1,13 @@
 const widgets = require("sdk/widget");
 const data = require("sdk/self").data;
 const ss = require("sdk/simple-storage");
+const _ = require("sdk/l10n").get;
 
 // Magical strings.
 const ICON_ON = "icon-on.png";
 const ICON_OFF = "icon-off.png";
-const TOOLTIP_ON = "Disable OpenFaux";
-const TOOLTIP_OFF = "Enable OpenFaux";
+const TOOLTIP_ON = _("disable_openfaux");
+const TOOLTIP_OFF = _("enable_openfaux");
 
 const DEBUG = true;
 
