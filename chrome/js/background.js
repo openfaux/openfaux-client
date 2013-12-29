@@ -22,7 +22,7 @@ function renderIcon() {
 		chrome.browserAction.setBadgeBackgroundColor( {color: "#ffa200" });
 	}
 	chrome.browserAction.setIcon({
-		path: 'media/openfaux-icon-19px' + state + '.png'
+		path: 'media/icon-19' + state + '.png'
 	});	
 }
 chrome.browserAction.onClicked.addListener(toggleState);
