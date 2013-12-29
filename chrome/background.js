@@ -5,7 +5,7 @@ function toggleState() {
 
 function renderIcon() {
   localStorage.state || (localStorage.state = 'on');
-  chrome.browserAction.setIcon({path:"icon-" + localStorage.state + ".png"});
+  chrome.browserAction.setIcon({path:"icons/icon-" + localStorage.state + ".png"});
 }
 
 chrome.browserAction.onClicked.addListener(toggleState);
