@@ -1,7 +1,7 @@
 OpenFaux Firefox Add-on
 =======================
 
-Resources for developer
+Developer Resources
 -----------------------
 
 Add-on SDK - Mozilla | MDN
