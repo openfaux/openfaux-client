@@ -1,6 +1,6 @@
 {
 	"name" : "OpenFaux",
-	"description" : "Browser Plug-in for encrypting and masking internet traffic.",
+	"description" : "Browser add-on for encrypting and masking internet traffic.",
 	"icons" : {
 		"128" : "icon128.png"
 	},
