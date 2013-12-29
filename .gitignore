@@ -27,3 +27,4 @@ nbproject
 .idea
 *.komodoproject
 .komodotools
+node_modules

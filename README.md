@@ -1,5 +1,9 @@
 ![OpenFaux](https://raw.github.com/openfaux/openfaux-website/master/HTML/IMG/openfaux-horizontal-2500px.png)
+
 ### Browser add-on for encrypting and masking internet traffic.
+
+[![devDependency status](https://david-dm.org/openfaux/openfaux-client/dev-status.png?theme=shields.io)](https://david-dm.org/openfaux/openfaux-client#info=devDependencies)
+
 Our mission is to advance the security of the internet and privacy for all online users. To begin fulfulling our mission, we've began working on OpenFaux. OpenFaux is an open source browser add-on for encrypting and masking internet traffic.
 
 For more information, please see https://www.openfaux.org
@@ -28,34 +32,18 @@ One of the most prevalent issues today is protecting our internet activity from 
 ## Software Stack
 
 * **Server-Side**
-    * Python
+ * Python
 * **Client-Side**
-    * HTML
-    * CSS
-    * JavaScript
-      * AJAX
-      * jQuery
+ * HTML
+ * CSS
+ * JavaScript
+  * AJAX
+  * jQuery
 * **Website**
-    * HTML
-    * CSS
-    * JavaScript
-    * Foundation
-
-## Contributing
-
-1. [Fork it](https://help.github.com/articles/fork-a-repo)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new [Pull Request](https://help.github.com/articles/using-pull-requests)
-
-## Bug Tracker
-
-Found a bug? Report it [here](https://github.com/openfaux/openfaux-website/issues/)!
-
-## Feature Request
-
-Have an idea? Add it [here](https://github.com/openfaux/openfaux-website/issues/)!
+ * HTML
+ * CSS
+ * JavaScript
+ * Foundation
 
 ## FAQs
 
