@@ -1,0 +1,17 @@
+<!DOCTYPE overlay SYSTEM "chrome://openfaux/locale/toolbarOverlay.dtd">
+
+<?xml-stylesheet href="chrome://openfaux/skin/toolbarOverlay.css" type="text/css"?>
+
+<overlay id="OpenFauxToolbarOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript"
+          src="chrome://openfaux/content/toolbarOverlay.js"/>
+
+  <toolbarpalette id="MailToolbarPalette">
+    <toolbarbutton id="openfaux-button"
+                   class="toolbarbutton-1 chromeclass-toolbar-additional"
+                   label="&openfaux.button.label;"
+                   tooltip="&openfaux.button.tooltip;"
+                   oncommand="OpenFaux.updateIcon();"/>
+  </toolbarpalette>
+</overlay>

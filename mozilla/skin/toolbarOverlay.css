@@ -1,0 +1,7 @@
+#openfaux-button {
+	list-style-image: url("chrome://openfaux/skin/icon1-small.png");
+}
+
+#openfaux-button[current="2"] {
+	list-style-image: url("chrome://openfaux/skin/icon2-small.png");
+}
