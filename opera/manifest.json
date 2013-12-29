@@ -2,20 +2,22 @@
 	"name" : "OpenFaux",
 	"description" : "Browser add-on for encrypting and masking internet traffic.",
 	"icons" : {
-		"128" : "icon128.png"
+		"16": "media/openfaux-icon-16px.png",
+		"48": "media/openfaux-icon-48px.png",
+		"128" : "media/openfaux-icon-128px.png"
 	},
 	"developer" : {
 		"name" : "OpenFaux",
-		"url" : "https://github.com/openfaux/openfaux-client"
-	},
+		"url" : "https://github.com/openfaux/"
+	},	
 	"homepage_url" : "https://github.com/openfaux/openfaux-client",
 	"background" : {
-		"scripts" : ["background.js"],
+		"scripts" : ["js/background.js"],
 		"persistent" : false
 	},
 	"browser_action" : {
 		"default_title" : "OpenFaux",
-		"default_icon" : "icon2.png"
+		"default_icon" : "media/openfaux-icon-19px.png"
 	},
 	"version" : "0.1",
 	"manifest_version" : 2,
@@ -23,10 +25,7 @@
 		"_execute_browser_action" : {
 			"suggested_key" : {
 				"default" : "Ctrl+E",
-				"windows" : "Ctrl+E",
-				"mac" : "Command+E",
-				"chromeos" : "Ctrl+E",
-				"linux" : "Ctrl+E"
+				"mac" : "Command+E"
 			}
 		}
 	},
