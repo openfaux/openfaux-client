@@ -1,0 +1,15 @@
+#openfaux-button {
+	list-style-image: url("chrome://openfaux/skin/icon1.png");
+}
+
+#openfaux-button[current="2"] {
+	list-style-image: url("chrome://openfaux/skin/icon2.png");
+}
+
+toolbar[iconsize="small"] #openfaux-button {
+	list-style-image: url("chrome://openfaux/skin/icon1-small.png");
+}
+
+toolbar[iconsize="small"] #openfaux-button[current="2"] {
+	list-style-image: url("chrome://openfaux/skin/icon2-small.png");
+}
