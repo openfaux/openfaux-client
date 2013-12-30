@@ -7,7 +7,7 @@
 
 ### Installation
 
-* Register add-in for 32-bit Windows
+* Register add-on for 32-bit Windows
 
     regsvr32 /i /s "full\path\to\OpenFaux.dll"
 
