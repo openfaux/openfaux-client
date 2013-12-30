@@ -1,0 +1,61 @@
+HKCR
+{
+	OpenFaux.OpenFauxBar.1 = s 'OpenFaux Toolbar'
+	{
+		CLSID = s '{558307DD-E54E-460B-B808-617F1AF3AC4D}'
+	}
+	OpenFaux.OpenFauxBar = s 'OpenFaux Toolbar'
+	{
+		CLSID = s '{558307DD-E54E-460B-B808-617F1AF3AC4D}'
+		CurVer = s 'OpenFaux.OpenFauxBar.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {558307DD-E54E-460B-B808-617F1AF3AC4D} = s 'OpenFaux Toolbar'
+		{
+			ProgID = s 'OpenFaux.OpenFauxBar.1'
+			VersionIndependentProgID = s 'OpenFaux.OpenFauxBar'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'Implemented Categories'
+			{
+				'{59FB2056-D625-48D0-A944-1A85B5AB2640}'
+			}
+			'TypeLib' = s '{2B4CA9C8-431D-4942-B2F3-BBE3FB1ABCFA}'
+		}
+	}
+}
+
+HKLM
+{
+	Software
+	{
+		Microsoft
+		{
+			'Internet Explorer'
+			{
+				Extensions
+				{
+					ForceRemove	{558307DD-E54E-460B-B808-617F1AF3AC4D} = s 'OpenFaux Toolbar'
+					{
+						val BandClsid = s '{558307DD-E54E-460B-B808-617F1AF3AC4D}'
+						val ButtonText = s 'OpenFaux Toolbar'
+						val Clsid = s '{2B4CA9C8-431D-4942-B2F3-BBE3FB1ABCFA}'
+						val 'Default Visible' = s 'Yes'
+						val 'Hot Icon' = s '%MODULE%,201'
+						val Icon = s '%MODULE%,201'
+						val MenuStatusBar = s 'OpenFaux Toolbar'
+						val MenuText = s 'OpenFaux Toolbar'
+					}
+				}
+				Toolbar
+				{
+					val {558307DD-E54E-460B-B808-617F1AF3AC4D} = s 'OpenFaux Toolbar'
+				}
+			}
+		}
+	}
+}

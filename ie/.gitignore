@@ -1,0 +1,9 @@
+Debug/*
+Release/*
+ipch/*
+*_i.h
+*_i.c
+*.aps
+*.sdf
+*.suo
+*.opensdf
