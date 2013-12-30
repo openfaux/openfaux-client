@@ -2,10 +2,6 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-function toggleState() {
-  localStorage.state = localStorage.state === 'on' ? 'off' : 'on';
-  renderIcon();
-}
 function renderIcon() {
   localStorage.state || (localStorage.state = 'on');
   var state = '';
@@ -25,6 +21,10 @@ function renderIcon() {
   chrome.browserAction.setIcon({
     path: 'media/icon-19' + state + '.png'
   });
+}
+function toggleState() {
+  localStorage.state = localStorage.state === 'on' ? 'off' : 'on';
+  renderIcon();
 }
 chrome.browserAction.onClicked.addListener(toggleState);
 renderIcon();
