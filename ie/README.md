@@ -1,7 +1,7 @@
 ### Build
 
 * Solution has been created with Visual Studio Professional 2012 (Express edition does not include MFC/ATL)
-* Tested on Win7 / IE9. Most probably it works on IE6+ (and from WinXP)
+* Tested on Win7 / IE9. It should work on IE6+ (and from WinXP).
 * 64-bit IE is the only version not supported currently
 * Current build depends on shared ATL libraries, if you want to distribute it right now, then you will need to include ATL too
 
