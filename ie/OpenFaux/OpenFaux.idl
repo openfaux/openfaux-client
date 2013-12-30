@@ -1,0 +1,37 @@
+// OpenFaux.idl : IDL source for OpenFaux
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (OpenFaux.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(9FB58E5B-6543-4345-9F15-1362E9BEC4BE),
+	object,
+	dual,
+	nonextensible,
+	helpstring("IOpenFauxBar Interface"),
+	pointer_default(unique)
+]
+interface IOpenFauxBar : IDispatch{
+};
+[
+	uuid(2B4CA9C8-431D-4942-B2F3-BBE3FB1ABCFA),
+	version(1.0),
+	helpstring("OpenFaux 1.0 Type Library")
+]
+library OpenFauxLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(558307DD-E54E-460B-B808-617F1AF3AC4D),
+		helpstring("OpenFaux Toolbar")
+	]
+	coclass OpenFauxBar
+	{
+		[default] interface IOpenFauxBar;
+	};
+};
+
