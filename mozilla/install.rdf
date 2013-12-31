@@ -3,7 +3,7 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
     <em:id>{a664f343-702a-4707-a2be-fbd12c70ec25}</em:id>
-    <em:version>0.1</em:version>
+    <em:version>0.01</em:version>
     <em:type>2</em:type>
     <em:bootstrap>false</em:bootstrap>
     <em:name>OpenFaux</em:name>
