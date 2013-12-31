@@ -12,6 +12,6 @@
                    class="toolbarbutton-1 chromeclass-toolbar-additional"
                    label="&openfaux.button.label;"
                    tooltip="&openfaux.button.tooltip;"
-                   oncommand="OpenFaux.updateIcon();"/>
+                   oncommand="OpenFauxToolbarButton.updateIcon();"/>
   </toolbarpalette>
 </overlay>
