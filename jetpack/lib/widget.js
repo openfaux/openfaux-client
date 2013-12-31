@@ -19,11 +19,11 @@ let HTTP_PORT = 0;
 
 // Set the button status.
 if (typeof ss.storage.button_is_on === 'undefined') {
-  // set default status to deactivated.
+  // Set default status to deactivated.
   ss.storage.button_is_on = false;
-};
+}
 
-/**
+/*
  * Toggle openfaux status, icon and tooltip.
  *
  * 'network.proxy.type' is a browser preference value which
@@ -37,6 +37,7 @@ if (typeof ss.storage.button_is_on === 'undefined') {
  * 'network.proxy.http_port' stores the manual http proxy port
  * number.
  */
+
 let toggle_openfaux = function () {
   if (ss.storage.button_is_on) {
     openfaux_button.contentURL = data.url(ICON_OFF);
@@ -50,7 +51,8 @@ let toggle_openfaux = function () {
       console.log('port set ' + config.get('network.proxy.http_port'));
       console.log('proxy type set to ' + config.get('network.proxy.type'));
     }
-} else {
+  }
+  else {
     openfaux_button.contentURL = data.url(ICON_ON);
     openfaux_button.tooltip = TOOLTIP_ON;
     ss.storage.button_is_on = true;
@@ -62,12 +64,13 @@ let toggle_openfaux = function () {
       console.log('port set ' + config.get('network.proxy.http_port'));
       console.log('proxy type set to ' + config.get('network.proxy.type'));
     }
- }
+  }
 };
 
-/**
+/*
  * Create and return button.
  */
+
 let createButton = function () {
   config.set('network.proxy.http', HTTP_ADDRESS);
   config.set('network.proxy.http_port', HTTP_PORT);
@@ -82,19 +85,18 @@ let createButton = function () {
 
   // Register the pref listeners.
   prefListen();
-
   openfaux_button = widgets.Widget({
-  	id: 'openfaux-addon-bar-button',
-	  label: 'Openfaux',
+    id: 'openfaux-addon-bar-button',
+    label: 'Openfaux',
     tooltip: TOOLTIP_OFF,
-  	contentURL: data.url(ICON_OFF),
-  	onClick: function () {
-	    toggle_openfaux();
+    contentURL: data.url(ICON_OFF),
+    onClick: function () {
+      toggle_openfaux();
       if (DEBUG) {
-	      console.log('button clicked, now openfaux is ' +
-	    		         (ss.storage.button_is_on ? 'on': 'off'));
+        console.log('button clicked, now openfaux is ' +
+                    (ss.storage.button_is_on ? 'on': 'off'));
       }
-  	}
+    }
   });
 
   return openfaux_button;
