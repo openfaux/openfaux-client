@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<widget 
+	xmlns="http://www.w3.org/ns/widgets" 
+	id="https://openfaux.org/opera-v12" 
+	defaultlocale="en" 
+	version="1.0 Alpha">
+	
+	<name short="OpenFaux">OpenFaux Client</name>
+	<author href="http://www.openfaux.org" email="support@openfaux.org">OpenFaux</author>
+
+	<icon src="icons/icon64.png"/>
+	<icon src="icons/icon1.png"/>
+	<icon src="icons/icon1@2x.png"/>
+	
+	<!-- icon for high density screens -->
+	<icon src="icons/icon128.png"/>
+	<icon src="icons/icon2.png"/>
+	<icon src="icons/icon2@2x.png"/>
+	
+	<access origin="*"/>
+	
+	<license href="http://www.gnu.org/licenses/agpl.html">Licensed under AGPL</license>
+	<description xml:lang="en">Browser Plug-in for encrypting and masking internet traffic.</description>
+</widget>
