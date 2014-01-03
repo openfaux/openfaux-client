@@ -1,0 +1,1 @@
+api.storage = chrome.storage;
