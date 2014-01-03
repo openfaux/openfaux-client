@@ -1,5 +1,5 @@
 ![OpenFaux](https://raw.github.com/openfaux/openfaux-website/master/HTML/IMG/openfaux-horizontal-2500px.png)
-## OpenFaux client-side core tools and API
+## Client-side core tools and API
 
 ## License
 
