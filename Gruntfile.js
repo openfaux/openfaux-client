@@ -42,7 +42,7 @@ module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
-  grunt.registerTask('dist', ['copy', 'zip']);
   grunt.registerTask('test', ['jshint', 'jscs']);
+  grunt.registerTask('dist', ['copy', 'zip']);
   grunt.registerTask('default', ['test', 'dist']);
 };
