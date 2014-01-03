@@ -4,21 +4,22 @@
   "id": "jid1-U0Hxs40otI0dxQ",
   "description": "Browser add-on for encrypting and masking internet traffic",
   "author": "OpenFaux team",
-  "license": "AGPL 3",
+  "license": "AGPL v3",
   "version": "0.1.0",
 
-  "preferences": [{
-    "name": "openfaux-proxy-address",
-    "description": "Set a proxy ip address",
-    "type": "string",
-    "title": "Proxy Address",
-    "value": ""
-  },
-  {
-    "name": "openfaux-proxy-port",
-    "description": "Set a port number for the proxy",
-    "type": "integer",
-    "title": "Proxy Port Number",
-    "value": 0
-  }]
+  "preferences": [
+    {
+      "name": "openfaux-proxy-address",
+      "description": "Set a proxy ip address",
+      "type": "string",
+      "title": "Proxy Address",
+      "value": ""
+    },
+    {
+      "name": "openfaux-proxy-port",
+      "description": "Set a port number for the proxy",
+      "type": "integer",
+      "title": "Proxy Port Number",
+      "value": 0
+    }]
 }
