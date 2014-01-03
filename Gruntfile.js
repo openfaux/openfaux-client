@@ -30,6 +30,16 @@ module.exports = function (grunt) {
       chrome: {
         src: 'chrome/**',
         dest: 'dist/'
+      },
+      jetpack: {
+        src: 'jetpack/**',
+        dest: 'dist/'
+      }
+    },
+    concat: {
+      jetpack: {
+        src: ['api/adapter/index.js', 'api/adapter/mozilla/*', 'jetpack/lib/widget.js'],
+        dest: 'dist/jetpack/lib/widget.js'
       }
     },
     zip: {
@@ -43,6 +53,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   grunt.registerTask('test', ['jshint', 'jscs']);
-  grunt.registerTask('dist', ['copy', 'zip']);
+  grunt.registerTask('compile', ['copy', 'concat']);
+  grunt.registerTask('dist', ['compile', 'zip']);
   grunt.registerTask('default', ['test', 'dist']);
 };
