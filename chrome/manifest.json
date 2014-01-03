@@ -25,5 +25,5 @@
       }
     }
   },
-  "permissions": ["tabs", "http://*/*"]
+  "permissions": ["tabs", "http://*/*", "storage"]
 }
