@@ -28,3 +28,4 @@ nbproject
 *.komodoproject
 .komodotools
 node_modules
+bin/
