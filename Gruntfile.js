@@ -37,6 +37,13 @@ module.exports = function (grunt) {
         src: 'chrome/**',
         dest: 'dist/chrome.crx' 
       } 
+    },
+    clean: {
+      chrome: ['dist/chrome**'],
+      jetpack: ['dist/jetpack**'],
+      mozilla: ['dist/mozilla**'],
+      opera: ['dist/opera**'],
+      safari: ['dist/safari**']
     }
   });
 
@@ -44,5 +51,5 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', ['jshint', 'jscs']);
   grunt.registerTask('dist', ['copy', 'zip']);
-  grunt.registerTask('default', ['test', 'dist']);
+  grunt.registerTask('default', ['clean', 'test', 'dist']);
 };
