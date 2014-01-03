@@ -1,1 +1,1 @@
-pref("extensions.openfauxtoolbarbutton.tbadded",false);
+pref('extensions.openfauxtoolbarbutton.tbadded', false);

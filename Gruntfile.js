@@ -1,50 +1,45 @@
-module.exports = function(grunt){
+/* jshint node: true */
+
+module.exports = function (grunt) {
+  'use strict';
+
+  // Force use of Unix newlines
+  grunt.util.linefeed = '\n';
+
   grunt.initConfig({
-    'pkg': grunt.file.readJSON('package.json'),
-    'jshint': {
-      'all': ['**/*.js'],
-      'options': {
-        'indent':   2,
-        'quotmark': 'single',
-        'expr':     true,
-        'moz':      true
+    pkg: grunt.file.readJSON('package.json'),
+
+    jshint: {
+      src: {
+        options: {
+          jshintrc: true,
+          ignores: 'node_modules/**' 
+        },
+        src: ['**/*.js']
       }
     },
-    'jscs': {
-      'options': {
-        'disallowKeywords': ['with'],
-        'disallowLeftStickedOperators': ['?', '+', '-', '/', '*', '=', '==', '===', '!=', '!==', '>', '>=', '<', '<='],
-        'disallowMultipleVarDecl': true,
-        'disallowRightStickedOperators': ['?', '/', '*', ':', '=', '==', '===', '!=', '!==', '>', '>=', '<', '<='],
-        'disallowSpaceAfterPrefixUnaryOperators': ['++', '--', '+', '-', '~', '!'],
-        'disallowSpaceBeforePostfixUnaryOperators': ['++', '--'],
-        'requireKeywordsOnNewLine': ['else'],
-        'requireLeftStickedOperators': [','],
-        'requireSpaceAfterBinaryOperators': ['+', '-', '/', '*', '=', '==', '===', '!=', '!=='],
-        'requireSpaceAfterKeywords': ['if', 'else', 'for', 'while', 'do', 'switch', 'return', 'try', 'catch'],
-        'requireSpaceBeforeBinaryOperators': ['+', '-', '/', '*', '=', '==', '===', '!=', '!=='],
-        'requireSpacesInFunctionExpression': {'beforeOpeningCurlyBrace': true},
-        'validateLineBreaks': 'LF'
+    jscs: {
+      gruntfile: {
+        src: ['Gruntfile.js']
       },
-      'all': ['**/*.js']
-    },
-    'compile': {
-      'chrome': {
-        'src': 'chrome/**',
-        'dest': 'bin/'
+      src: {
+        src: ['**/*.js']
       }
     },
-    'ship': {
-      'bin/chrome.crx': 'chrome/'
+    copy: {
+      chrome: {
+        src: 'chrome/**',
+        dest: 'dist/'
+      }
+    },
+    zip: {
+      'dist/chrome.crx': 'chrome/'
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-zip');
-  grunt.loadNpmTasks('grunt-contrib-jscs');
+  require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
-  grunt.task.renameTask('copy', 'compile');
-  grunt.task.renameTask('zip', 'ship');
-}
+  grunt.registerTask('dist', ['copy', 'zip']);
+  grunt.registerTask('test', ['jshint', 'jscs']);
+  grunt.registerTask('default', ['dist', 'test']);
+};
