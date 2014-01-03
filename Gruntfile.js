@@ -34,7 +34,7 @@ module.exports = function (grunt) {
     },
     zip: {
       chrome: {
-        src: 'chrome/',
+        src: 'chrome/**',
         dest: 'dist/chrome.crx' 
       } 
     }
