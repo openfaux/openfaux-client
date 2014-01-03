@@ -1,10 +1,10 @@
 {
   "disallowKeywords": ["with"],
   "disallowLeftStickedOperators": ["?", "+", "-", "/", "*", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<="],
-  "disallowMultipleVarDecl": true,
   "disallowRightStickedOperators": ["?", "/", "*", ":", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<="],
   "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~", "!"],
   "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
+  "excludeFiles": ["node_modules/**"],
   "requireKeywordsOnNewLine": ["else"],
   "requireLeftStickedOperators": [","],
   "requireSpaceAfterBinaryOperators": ["+", "-", "/", "*", "=", "==", "===", "!=", "!=="],
