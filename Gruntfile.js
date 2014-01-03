@@ -39,17 +39,13 @@ module.exports = function (grunt) {
       } 
     },
     clean: {
-      chrome: ['dist/chrome**'],
-      jetpack: ['dist/jetpack**'],
-      mozilla: ['dist/mozilla**'],
-      opera: ['dist/opera**'],
-      safari: ['dist/safari**']
+      dist: 'dist'
     }
   });
 
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   grunt.registerTask('test', ['jshint', 'jscs']);
-  grunt.registerTask('dist', ['copy', 'zip']);
-  grunt.registerTask('default', ['clean', 'test', 'dist']);
+  grunt.registerTask('dist', ['clean', 'copy', 'zip']);
+  grunt.registerTask('default', ['test', 'dist']);
 };
