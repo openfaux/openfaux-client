@@ -1,6 +1,6 @@
 {
-  "indent":   2,
+  "indent": 2,
   "quotmark": "single",
-  "expr":     true,
-  "moz":      true
+  "expr": true,
+  "moz": true
 }
