@@ -33,7 +33,10 @@ module.exports = function (grunt) {
       }
     },
     zip: {
-      'dist/chrome.crx': 'chrome/'
+      chrome: {
+        src: 'chrome/',
+        dest: 'dist/chrome.crx' 
+      } 
     }
   });
 
