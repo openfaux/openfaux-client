@@ -2,58 +2,58 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>Author</key>
-  <string>OpenFaux</string>
-  <key>Builder Version</key>
-  <string>9537.73.11</string>
-  <key>CFBundleDisplayName</key>
-  <string>OpenFaux</string>
-  <key>CFBundleIdentifier</key>
-  <string>com.github.openfaux</string>
-  <key>CFBundleInfoDictionaryVersion</key>
-  <string>6.0</string>
-  <key>CFBundleShortVersionString</key>
-  <string>0.1</string>
-  <key>CFBundleVersion</key>
-  <string>0.1</string>
-  <key>Chrome</key>
-  <dict>
-    <key>Global Page</key>
-    <string>global_page.html</string>
-    <key>Toolbar Items</key>
-    <array>
-      <dict>
-        <key>Command</key>
-        <string>toggleOpenfaux</string>
-        <key>Identifier</key>
-        <string>openfaux.toggle</string>
-        <key>Image</key>
-        <string>icons/icon-off.png</string>
-        <key>Label</key>
-        <string>Toggle OpenFaux</string>
-      </dict>
-    </array>
-  </dict>
-  <key>Content</key>
-  <dict>
-    <key>Scripts</key>
-    <dict/>
-  </dict>
-  <key>Description</key>
-  <string>Browser add-on for encrypting and masking internet traffic.</string>
-  <key>ExtensionInfoDictionaryVersion</key>
-  <string>1.0</string>
-  <key>Permissions</key>
-  <dict>
-    <key>Website Access</key>
-    <dict>
-      <key>Include Secure Pages</key>
-      <true/>
-      <key>Level</key>
-      <string>All</string>
-    </dict>
-  </dict>
-  <key>Update Manifest URL</key>
-  <string>https://raw.github.com/openfaux/openfaux-client/master/safari/openfaux.safariextension/updates.plist</string>
+	<key>Author</key>
+	<string>OpenFaux</string>
+	<key>Builder Version</key>
+	<string>7537.73.11</string>
+	<key>CFBundleDisplayName</key>
+	<string>OpenFaux</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.github.openfaux</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1</string>
+	<key>CFBundleVersion</key>
+	<string>0.1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>global_page.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>toggleOpenfaux</string>
+				<key>Identifier</key>
+				<string>openfaux.toggle</string>
+				<key>Image</key>
+				<string>icons/icon-off.png</string>
+				<key>Label</key>
+				<string>Toggle OpenFaux</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict/>
+	</dict>
+	<key>Description</key>
+	<string>Browser add-on for encrypting and masking internet traffic.</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://raw.github.com/openfaux/openfaux-client/master/safari/openfaux.safariextension/updates.plist</string>
 </dict>
 </plist>
