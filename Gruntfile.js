@@ -6,9 +6,12 @@ module.exports = function (grunt) {
   // Force use of Unix newlines
   grunt.util.linefeed = '\n';
 
+  // Project configuration
   grunt.initConfig({
+    // Metadata
     pkg: grunt.file.readJSON('package.json'),
 
+    // Tasks configuration
     jshint: {
       src: {
         options: {
@@ -43,9 +46,15 @@ module.exports = function (grunt) {
     },
   });
 
+  // Load plugins
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
+  // Tests task
   grunt.registerTask('test', ['jshint', 'jscs']);
+
+  // Distribution task
   grunt.registerTask('dist', ['clean', 'copy', 'zip']);
+
+  // Default task
   grunt.registerTask('default', ['test', 'dist']);
 };
