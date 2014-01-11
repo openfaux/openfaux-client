@@ -1,7 +1,7 @@
 var ss = require('sdk/simple-storage');
-api.storage = {};
+fauxkit.storage = {};
 
-var storage = api.storage.local = api.storage.sync = {};
+var storage = fauxkit.storage.local = fauxkit.storage.sync = {};
 
 storage.get = function(query, cb) {
   var result = {};

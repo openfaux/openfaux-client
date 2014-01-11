@@ -1,1 +1,1 @@
-var api = {};
+var fauxkit = {};
