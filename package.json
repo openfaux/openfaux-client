@@ -1,9 +1,9 @@
 {
   "name": "openfaux-client",
+  "repository": "openfaux/openfaux-client",
   "scripts": {
     "test": "grunt test"
   },
-  "repository": "openfaux/openfaux-client",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-clean": "~0.5.0",
