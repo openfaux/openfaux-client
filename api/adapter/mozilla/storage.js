@@ -1,6 +1,6 @@
-var ss = require('sdk/simple-storage');
 fauxkit.storage = {};
 
+var ss = require('sdk/simple-storage');
 var storage = fauxkit.storage.local = fauxkit.storage.sync = {};
 
 storage.get = function(query, cb) {
@@ -23,8 +23,8 @@ storage.get = function(query, cb) {
       defaultValues.push(query[key]);
     }
   }
-  else if (query === null){
-    //return entire storage object
+  else if (query === null) {
+    // return entire storage object
   }
   else {
     throw new Error('Illegal arguments. Expected are string, array, or object but was ' + typeof query);
@@ -41,13 +41,14 @@ storage.get = function(query, cb) {
 };
 
 storage.set = function(obj, cb) {
-  if (typeof obj !== 'object'){
+  if (typeof obj !== 'object') {
     throw new Error('Illegal argument. Expected key/value pair dictionary but was' + typeof obj);
   }
 
   var change = {};
+  var key;
 
-  for (var key in obj){
+  for (key in obj){
     change[key] = {
       oldValue: ss.storage[key],
       newValue: obj[key]
@@ -66,9 +67,10 @@ storage.set = function(obj, cb) {
 };
 
 storage.remove = function(query, cb) {
-  if (typeof query === string) 
+  if (typeof query === string) {
     delete ss.storage[query];
-  else if (Array.isArray(query)){
+  }
+  else if (Array.isArray(query)) {
     query.forEach(function(key) {
       delete ss.storage[key];
     });
