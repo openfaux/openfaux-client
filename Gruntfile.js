@@ -26,6 +26,9 @@ module.exports = function (grunt) {
         src: ['**/*.js']
       }
     },
+    clean: {
+      dist: 'dist'
+    },
     copy: {
       chrome: {
         src: 'chrome/**',
@@ -38,9 +41,6 @@ module.exports = function (grunt) {
         dest: 'dist/chrome.crx' 
       } 
     },
-    clean: {
-      dist: 'dist'
-    }
   });
 
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
