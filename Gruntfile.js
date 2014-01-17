@@ -6,12 +6,12 @@ module.exports = function (grunt) {
   // Force use of Unix newlines
   grunt.util.linefeed = '\n';
 
-  // Project configuration
+  // Configuration
   grunt.initConfig({
-    // Metadata
+    // Meta data
     pkg: grunt.file.readJSON('package.json'),
 
-    // Tasks configuration
+    // Tasks
     jshint: {
       src: {
         options: {
@@ -41,8 +41,8 @@ module.exports = function (grunt) {
     zip: {
       chrome: {
         src: 'chrome/**',
-        dest: 'dist/chrome.crx' 
-      } 
+        dest: 'dist/chrome.crx'
+      }
     },
   });
 
