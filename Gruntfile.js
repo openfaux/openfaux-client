@@ -16,7 +16,7 @@ module.exports = function (grunt) {
       src: {
         options: {
           jshintrc: true,
-          ignores: 'node_modules/**' 
+          ignores: 'node_modules/**'
         },
         src: ['**/*.js']
       }
@@ -44,6 +44,12 @@ module.exports = function (grunt) {
         dest: 'dist/chrome.crx'
       }
     },
+    watch: {
+      chrome: {
+        files: 'chrome/**/*',
+        tasks: ['test', 'dist'],
+      }
+    }
   });
 
   // Load plugins
