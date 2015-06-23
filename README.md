@@ -1,4 +1,4 @@
-![OpenFaux](https://raw2.github.com/openfaux/openfaux-website/master/HTML/IMG/openfaux-horizontal-600px.png)
+![OpenFaux](https://raw.githubusercontent.com/openfaux/openfaux-website/master/HTML/IMG/openfaux-horizontal-600px.png)
 
 ### Browser add-on for encrypting and masking internet traffic.
 
